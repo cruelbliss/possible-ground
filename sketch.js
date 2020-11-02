@@ -59,9 +59,10 @@ function draw() {
   let modAmp = map(mouseX/2, 0, width, 0, 1);
   modulator.amp(modAmp, 0.01);
   
-  text('T O U C H   T O   B E L L O W   A   T U N E   TO  THE  T H R U M B   OF   M Y    V E I N S ', 20, 20);
-  text('peaks: ' + freq, 20, 40);
-  text('height: ' + amp, 20, 60);
+  text('T O U C H   T O   B E L L O W   A   T U N E   TO  THE  T H R U M B   OF   M Y    V E I N S ', width/16, height/15);
+  text('peaks: ' + freq, width/16, height/10);
+  text('height: ' + amp, width/16, height/7.5);
+  textSize(height/44);
  filter(DILATE);
 
   if (playing) {
